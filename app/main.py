@@ -1,10 +1,10 @@
 from fastapi import FastAPI, Request
-from fastapi.responses import HTMLResponse
-from fastapi.staticfiles import StaticFiles
-from fastapi.templating import Jinja2Templates
+from app.routes import file
 
 app = FastAPI(
     docs_url="/backend"
 )
+
+app.include_router(file.router)
 
 
