@@ -14,3 +14,8 @@ async def upload_file(f: UploadFile = File(...)):
         reader = PdfReader(io.BytesIO(content))
         pages = [p.extract_text() for p in reader.pages]
         full_text = "\n\n".join(filter(None, pages))
+    
+    elif f.content_type in "application/docx" or f.filename.endswith(".docx"):
+        doc = Document(io.BytesIO(content))
+        paragraphs = [para.text for para in doc.paragraphs]
+        full_text = "\n\n".join(filter(None, paragraphs))
