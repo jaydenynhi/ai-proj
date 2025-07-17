@@ -12,3 +12,7 @@ to push code:
 git add . 
 git commit -m "your message here"
 git push origin #your branch#
+
+to pull code:
+git pull origin main
+
