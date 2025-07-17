@@ -1,4 +1,5 @@
 uvicorn
 fastapi
 PyPDF2 
-docx
+python-docx
+python-multipart
