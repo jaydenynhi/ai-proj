@@ -1,2 +1,4 @@
 uvicorn
 fastapi
+PyPDF2 
+docx
