@@ -3,3 +3,10 @@ fastapi
 PyPDF2 
 python-docx
 python-multipart
+google-generativeai 
+python-dotenv
+langchain
+faiss-cpu
+sentence-transformers
+langchain-community
+openai

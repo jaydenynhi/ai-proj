@@ -4,7 +4,7 @@ from PyPDF2 import PdfReader
 from docx import Document
 import io, tempfile
 from typing import Optional
-from app.services.file_service import get_context
+from app.services.file_service import get_full_context
 
 router = APIRouter()
 
@@ -38,6 +38,6 @@ async def list_contexts(
         None,
     )
 ):
-    return get_context(filename)
+    return get_full_context(filename)
 
 
